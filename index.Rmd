@@ -51,8 +51,8 @@ meta() %>%
   meta_name("github-repo" = "koliajaykr/xarExtra-session") %>% 
   meta_social(
     title = "extraordinary slides using xaringanExtra",
-    url = "https://xarextra.netlify.app/",
-    image = "https://xarextra.netlify.app/images/social-card.png",
+    url = "https://xeurmia.netlify.app/",
+    image = "https://xeurmia.netlify.app/images/social-card.png",
     og_type = "talk",
     og_author = "Ajay Koli",
     twitter_card_type = "summary_large_image",
