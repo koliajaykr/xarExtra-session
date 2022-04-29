@@ -1,0 +1,149 @@
+---
+title: "xaringan test slides"
+author: "ajay koli"
+output:
+  xaringan::moon_reader:
+    nature:
+      ratio: 16:9
+
+
+
+---
+
+# Title slide
+
+- We are learning how to use R package xaringanExtra 
+
+---
+
+# We will learn how to:
+
+- see an overview of the slides
+
+```{r}
+library(xaringanExtra)
+
+xaringanExtra::use_tile_view()
+```
+
+---
+
+# How to make panels in the xaringan slide
+
+```{r echo=FALSE}
+xaringanExtra::use_panelset()
+library(palmerpenguins)
+library(ggplot2)
+```
+
+.panelset[
+
+.panel[.panel-name[Code]
+
+```{r plot-code, eval=FALSE}
+penguins %>% 
+  ggplot(aes(x = sex)) +
+  geom_bar()
+```
+
+
+]
+
+.panel[.panel-name[Output]
+
+```{r ref.label="plot-code", echo=FALSE, out.width="40%"}
+
+```
+
+]
+
+]
+
+---
+
+# How to make panel for the table
+
+.panelset[
+
+.panel[.panel-name[Code]
+
+```{r peng-table, eval=FALSE}
+
+library(kableExtra)
+library(tidyverse)
+
+penguins %>% 
+  select(2:5) %>% 
+  head() %>% 
+  kbl() 
+```
+
+]
+
+.panel[.panel-name[Table]
+
+```{r ref.label="peng-table", echo=FALSE}
+
+```
+
+
+]
+
+]
+
+---
+
+```{r}
+
+age <- c(1:6)
+name <- c("a", "b", "c", "d", "e", "f")
+
+class <- data.frame(age, name)
+
+class
+
+write_csv(class, "class.csv")
+```
+
+---
+
+# How to edit slides live
+
+```{r}
+xaringanExtra::use_editable(expires = 1)
+```
+
+- .can-edit[this can be changed]
+
+
+---
+
+```{r}
+class2 <- read_csv("class.csv")
+
+class2 %>% 
+  kbl
+```
+
+---
+
+# How to use presenter notes
+
+- this is point one
+
+- this is point two
+
+???
+
+this is a note for point one and two
+
+```{r}
+xaringanExtra::use_progress_bar()
+xaringanExtra::use_scribble()
+```
+
+
+
+
+
+

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>extraordinary slides using xaringanExtra</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ajay Koli" />
+    <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="index_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="index_files/tile-view-0.2.6/tile-view.js"></script>
+    <link href="index_files/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="index_files/panelset-0.2.6/panelset.js"></script>
+    <link href="index_files/tachyons-4.12.0/tachyons.min.css" rel="stylesheet" />
+    <script src="index_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="index_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="index_files/shareon-1.4.1/shareon.min.js"></script>
+    <link href="index_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <link href="index_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <meta name="description" content="Ajay Koli - Nalanda Academy"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="koliajaykr/xarExtra-session"/>
+    <meta name="twitter:title" content="extraordinary slides using xaringanExtra"/>
+    <meta name="twitter:description" content="Ajay Koli - Nalanda Academy"/>
+    <meta name="twitter:url" content="https://xarextra.netlify.app/"/>
+    <meta name="twitter:image" content="https://xarextra.netlify.app/images/social-card.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@ajay_kolii"/>
+    <meta name="twitter:site" content="@ajay_kolii"/>
+    <meta property="og:title" content="extraordinary slides using xaringanExtra"/>
+    <meta property="og:description" content="Ajay Koli - Nalanda Academy"/>
+    <meta property="og:url" content="https://xarextra.netlify.app/"/>
+    <meta property="og:image" content="https://xarextra.netlify.app/images/social-card.png"/>
+    <meta property="og:type" content="talk"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Ajay Koli"/>
+    <script src="index_files/kePrint-0.0.1/kePrint.js"></script>
+    <link href="index_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link href="index_files/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-progressBar-0.0.1/progress-bar.js"></script>
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+background-image: url("https://images.unsplash.com/photo-1560347964-838d2f63cdc0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1771&amp;q=80")
+background-size: cover
+background-position: 
+
+class: title-slide, hide-count, center hide-logo
+
+# .black[**extraordinary slides&lt;br&gt;using xaringanExtra**]
+
+## .green.b[Ajay Koli | 30 April 2022 | R-Ladies Urmia]
+
+---
+
+class: middle, hide-logo
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(https://pbs.twimg.com/profile_images/1399612666847674369/O6F5fplU_400x400.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+.pull-left[
+&lt;img src="images/ajaykoli.png" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
+
+Dr Ajay Kumar Koli&lt;br&gt;Head of School of Data Science&lt;br&gt;&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"&gt;&lt;/path&gt;&lt;/svg&gt; [Nalanda Academy](https://nalanda-academy.org/) - Wardha&lt;br&gt;&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; [@ajay_kolii](https://twitter.com/ajay_kolii)
+&lt;br&gt;&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"&gt;&lt;/path&gt;&lt;/svg&gt; [https://koliajay.netlify.app/](https://koliajay.netlify.app/)
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+# .big-text[Hello! 😊]
+
+]
+
+---
+
+background-image: url("images/xaringan.png")
+background-size: 35%
+background-position: 50% 65%
+
+# xaringan 🤺
+
+- "The xaringan package is an R Markdown extension based on the JavaScript library remark.js to generate HTML5 presentations of a different style."
+
+.footnote[
+Source: xaringan book [chapter](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+]
+
+---
+
+# Basics of xaringan
+
+- to add a new slide: `---`
+
+--
+
+- for increment slide: `--`
+
+--
+
+- two columns: `.pull-left[]` &amp; `.pull-right[]`
+
+--
+
+- class: `center, inverse, hide-count, hide-logo`
+
+--
+
+- text size:
+  - `# heading`
+  - `## sub-heading`
+  - `### sub-sub-heading`
+
+---
+
+background-image: url("https://avatars.githubusercontent.com/u/5420529?v=4")
+background-size: 35%
+background-position: 101% 10%
+
+class: hide_logo
+
+# 🎡 xaringanExtra (xE)
+
+- by [Garrick Aden-Buie](https://www.garrickadenbuie.com/)
+
+--
+
+- It "is a playground of enhancements and extensions &lt;br&gt;for [xaringan](https://slides.yihui.org/xaringan/#1) slides."
+
+--
+
+- Information for the present slides is adapted from &lt;br&gt;Garrick's webpage [xaringanExtra]((https://pkg.garrickadenbuie.com/xaringanExtra/#/).
+
+---
+
+# Download xE from GitHub
+
+
+```r
+install.packages("devtools")
+devtools::install_github("gadenbuie/xaringanExtra")
+```
+
+--
+
+## Required packages are:
+
+
+```r
+library(xaringan)
+library(xaringanExtra)
+library(palmerpenguins) # to get penguins data
+library(kableExtra) # to prepare tables
+```
+
+---
+
+# 🤩 xE can help you to:
+
+.pull-left[
+- Add an overview of your presentation with tile view
+- Use the Tachyons CSS utility toolkit
+- Make your slides editable
+- Share your slides in style with share again
+- Broadcast your slides in real time to viewers with broadcast
+- Scribble on your slides during your presentation with scribble
+- Announce slide changes with a subtle tone
+- Add extra CSS styles
+]
+
+.pull-right[
+- Animate slide transitions with animate.css
+- Add tabbed panels to slides with panelset
+- Add a logo to all of your slides with logo
+- Add a search box to search through your slides with search
+- Add a live video feed of your webcam
+- Add one-click code copying with clipboard
+- Always play gifs from the start with freezeframe
+- Fit your slides to fill the browser window
+]
+
+---
+
+# Slide overview
+
+
+```r
+xaringanExtra::use_tile_view()
+```
+
+&lt;img src="images/tile.png" width="3840" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Tachyons
+
+
+
+- a collection of `CSS` utility classes (check this website http://tachyons.io/ for a list of functions)
+
+--
+
+- color of the text `.nameofthecolor[your text]`
+
+  - `.silver[I am red!]` = .silver[I am silver.]
+  - `.gold[I am red!]` = .gold[Your are gold.]
+  
+--
+
+- italicize text `.i[write text here]`
+
+  - `.i[Allow me to tilt a bit]` = .i[Allow me to tilt a bit]  
+  
+--
+
+- bold text `.b[Bold &amp; Beautiful.]` = .b[Bold &amp; Beautiful.]
+
+- underline text `.underline[This is important.]` = .underline[This is important]
+
+- strike text `.strike[This was by mistake.]` = .strike[This was by mistake.]
+
+---
+
+# Combine tachyons
+
+- .b.underline.blue[This is just fantastic.] = `.b.underline.blue[This is just fantastic.]`
+
+--
+
+- `.b.blue[this is .red[awesome] .strike[but fake]]` = .b.blue[this is .red[awesome] .strike[but fake]]
+
+--
+
+- Text size
+  - `.f1[hello]` = .f1[hello] 
+  - `.f2[hello]` = .f2[hello] 
+  - `.f3[hello]` = .f3[hello]
+  - `.f4[hello]` = .f4[hello]
+  - `.f5[hello]` = .f5[hello]
+
+--
+
+- Capital Text `.ttc[nice thing to say]` = .ttc[nice thing to say]
+
+--
+
+- UPPER-CASE TEXT `.ttu[we all are tall]` = .ttu[we all are tall]
+
+---
+
+
+# Combine tachyons
+
+.bg-washed-yellow.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
+The only way to write good code is to write tons of bad code first. 
+Feeling shame about bad code stops you from getting to good code
+
+.tr[
+— Hadley Wickham
+]]
+
+`.bg-washed-yellow.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
+The only way to write good code is to write tons of bad code first. Feeling shame about bad code stops you from getting to good code
+.tr[
+— Hadley Wickham
+]]`
+
+---
+
+# Clipboard
+
+
+```r
+xaringanExtra::use_clipboard()
+```
+
+---
+
+# Panelset
+
+
+```r
+xaringanExtra::use_panelset()
+```
+
+--
+
+.panelset[
+.panel[.panel-name[Panel 1]
+## We can place our content here
+
+- you can write panel name as you like
+
+- it is very helpful while showing simultaneously code and its output
+
+- use `\(\leftarrow\)` left and `\(\rightarrow\)` right arrow keys to move from one panel to another
+]
+
+.panel[.panel-name[Image]
+&lt;img src="https://i.giphy.com/media/OFIsBxe3v7mKI/giphy.webp" width="45%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.panel[.panel-name[Panel 3]
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; species &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; island &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; bill_length_mm &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; bill_depth_mm &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; flipper_length_mm &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; body_mass_g &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; sex &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; year &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 181 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3750 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; male &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 186 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3800 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; female &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 40.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 195 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3250 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; female &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 36.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 193 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3450 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; female &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Adelie &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Torgersen &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 190 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3650 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; male &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2007 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+
+.panel[.panel-name[Plot Code]
+
+```r
+penguins %&gt;% 
+  ggplot(aes(bill_length_mm, bill_depth_mm)) +
+  geom_point(aes(color = species)) +
+  scale_color_brewer(palette = "Dark2") +
+  theme_bw() +
+  labs(
+    title = "Relationship between bill length and depth of the palmer penguins",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+      ) +
+  theme(text = element_text(size = 12))
+```
+]
+
+.panel[.panel-name[Plot]
+&lt;img src="index_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+# Logo
+
+- add logo to each slide
+
+
+```r
+xaringanExtra::use_logo(
+  image_url = "images/ajaykoli.png",
+  link_url = "https://koliajay.netlify.app/",
+  width = "100px",
+  height = "100px"
+)
+```
+
+---
+
+# Share again
+
+- To share your xaringan slides
+
+
+```r
+xaringanExtra::use_share_again()
+```
+
+--
+
+- To embed your xaringan slides
+
+
+```r
+xaringanExtra::embed_xaringan()
+```
+
+---
+
+# Extra styles
+
+- to highlight a few particular codes
+
+
+```r
+xaringanExtra::use_extra_styles(
+* hover_code_line = TRUE,
+* mute_unhighlighted_code = TRUE
+)
+```
+
+--
+
+- to add presentation progress bar
+
+
+```r
+xaringanExtra::use_progress_bar(color = "#800080", 
+                                location = "top",
+                                height = "0.25em")
+```
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: #800080;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
+---
+
+class: center middle
+
+# Thank you everyone!!&lt;br&gt;😄
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-light",
+"highlightLanguage": ["r", "css", "yaml"],
+"slideNumberFormat": "%current%",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

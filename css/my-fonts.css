@@ -1,0 +1,53 @@
+/* I developed these themse own my own and trying to be as similar as my personal website */
+
+/*this google font is used for the slide headings*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+/*this google font is used for the slide text*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 400;
+  color: #253529;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  color:  #ca6627;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  color: #ca6627;
+}
+
+h3 {
+  font-family: 'Bitter', serif;
+  font-weight: 300;
+  color: #ca6627;
+  font-size: 1.3em !important;
+}
+
+h4, h5, h6 {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  color: #454343;
+}
+
+.remark-code,
+.remark-inline-code{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@media print {
+  body {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
